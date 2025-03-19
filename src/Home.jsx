@@ -7,13 +7,29 @@ function Home() {
 
     const handleSubmit = e => {
         e.preventDefault();
-        const scrapeCityData = new Scrape(selectedCity);
-        scrapeCityData.getCityFunction();
+        //const scrapeCityData = new Scrape(selectedCity);
+        //scrapeCityData.getCityFunction();
+        getInfo();
     }
 
     const handleSelect = e => {
         setSelectedCity(e.target.value);
     }
+
+    // Tells the server which city to scrape information for
+    async function postInfo() {
+
+    }
+
+    // Gets the scraped info
+    async function getInfo() {
+        const res = await fetch('http://localhost:5000/toronto', 
+            {method: 'GET'}
+        )
+
+        const data = await res.json();
+        console.log(data);
+    };
 
 
   return (
