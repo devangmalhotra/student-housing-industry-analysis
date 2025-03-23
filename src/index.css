@@ -57,15 +57,12 @@ button {
   cursor: pointer;
   transition: 0.25s;
   color: var(--background);
+  outline: none;
 }
 button:hover {
   border-color: #646cff;
   background-color: var(--background);
   color: var(--text-color);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
