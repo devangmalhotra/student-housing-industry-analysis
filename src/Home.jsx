@@ -2,6 +2,8 @@ import React from 'react'
 import Scrape from './Scrape'
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import infoIcon from './assets/info-circle-svgrepo-com.svg';
+import darkModeIcon from './assets/moon-svgrepo-com.svg';
 
 function Home() {
     const [selectedCity, setSelectedCity] = useState('');
@@ -38,6 +40,10 @@ function Home() {
     <div id='home-main'>
         <header>
             <Link to='/'><h3>Student Housing Industry Analysis</h3></Link>
+            <div id='header-icons'>
+                <img className='header-icon' src={darkModeIcon} alt="Switch modes" />
+                <img className='header-icon' src={infoIcon} alt="About" />
+            </div>
         </header>
     </div>
 /*     <div id='home-main'>

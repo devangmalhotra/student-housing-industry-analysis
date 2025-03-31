@@ -4,8 +4,9 @@
   --teal: #004D61;
   --raspberry: #822659;
   --camo-green: #3E5641;
-  max-width: 1280px;
-  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+ 
   /*padding: 2rem;*/
   /*text-align: center;*/
   background-color: var(--background);
@@ -53,8 +54,22 @@
   backdrop-filter: blur(9.4px);
   -webkit-backdrop-filter: blur(9.4px);
   margin: 0;
-  padding: 20px;
-  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#home-main .header-icon {
+  width: 25px;
+  height: auto;
+  filter: invert(96%) sepia(0%) saturate(14%) hue-rotate(272deg) brightness(104%) contrast(105%);
+}
+
+#home-main #header-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 #home-main form {
