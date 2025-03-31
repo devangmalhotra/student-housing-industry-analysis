@@ -23,7 +23,7 @@ function Home() {
 
     // Gets the scraped info
     async function getInfo() {
-        const res = await fetch(`http://localhost:5000/scrape?city=${selectedCity}`, 
+        const res = await fetch(`http://localhost:8000/scrape?city=${selectedCity}`, 
             {method: 'GET'}
         )
 
