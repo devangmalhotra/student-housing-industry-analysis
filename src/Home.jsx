@@ -34,7 +34,12 @@ function Home() {
 
 
   return (
-    <div id='home-main'>
+    <div>
+        <header>
+            <h1>Student Housing Industry Analysis</h1>
+        </header>
+    </div>
+/*     <div id='home-main'>
         <div id='home-content'>
             <div id='title'>
                 <h1>Student Housing Industry Analysis</h1>
@@ -52,7 +57,7 @@ function Home() {
                 </form>
             </div>
         </div>
-    </div>
+    </div> */
   )
 }
 
