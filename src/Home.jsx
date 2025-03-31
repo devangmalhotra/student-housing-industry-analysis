@@ -1,6 +1,7 @@
 import React from 'react'
 import Scrape from './Scrape'
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function Home() {
     const [selectedCity, setSelectedCity] = useState('');
@@ -34,9 +35,9 @@ function Home() {
 
 
   return (
-    <div>
+    <div id='home-main'>
         <header>
-            <h1>Student Housing Industry Analysis</h1>
+            <Link to='/'><h3>Student Housing Industry Analysis</h3></Link>
         </header>
     </div>
 /*     <div id='home-main'>

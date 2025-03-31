@@ -29,17 +29,17 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /*display: flex;*/
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
+h3 {
+  /*font-size: 3.2em;*/
   line-height: 1.1;
-  
-  background: linear-gradient(#e2e2e2, #767676);
+  margin: 0;
+  background: linear-gradient(#e2e2e2, #007666);
   color: transparent;
   background-clip: text;
   
