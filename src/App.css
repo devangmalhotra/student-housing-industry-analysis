@@ -69,7 +69,7 @@
 #home-main #header-icons {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 12px;
 }
 
 #home-main form {
