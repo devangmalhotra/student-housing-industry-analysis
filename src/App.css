@@ -68,6 +68,10 @@
   display: block;
 }
 
+.hidden {
+  display: none !important;
+}
+
 #navbar ul {
   display: flex;
   flex-direction: row;
@@ -149,6 +153,7 @@ h5 {
 @media screen and (max-width: 470px) {
   #navbar #hamburger {
     display: flex;
+    cursor: pointer;
   }
 
   #navbar ul {
@@ -161,10 +166,6 @@ h5 {
     left: 0;
     right: 0;
     gap: 0;
-  }
-
-  .hidden {
-    display: none;
   }
 
   #navbar li {
