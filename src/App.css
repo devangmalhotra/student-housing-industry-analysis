@@ -142,9 +142,11 @@ h5 {
   height: 175px;
 }
 
-#home-main header {
+#home-main #dashboard-header {
   background-color: red;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 h4 {

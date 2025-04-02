@@ -40,9 +40,14 @@ function Home() {
   return (
     <div id='home-main'>
         <Navbar />
-        <header>
-            <h4>CITY Dashboard</h4>
-        </header>
+        <div id='dashboard-header'>
+            <label htmlFor="selectCity"><h4>CITY Dashboard</h4></label>
+            <select name="selectCity" id="SelectCity" onChange={handleSelect}>
+                    <option value="waterloo">Waterloo</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="hamilton">Hamilton</option>
+                </select>
+        </div>
     </div>
 /*     <div id='home-main'>
         <div id='home-content'>
