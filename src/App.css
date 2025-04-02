@@ -65,6 +65,7 @@
   width: 25px;
   height: auto;
   filter: invert(96%) sepia(0%) saturate(14%) hue-rotate(272deg) brightness(104%) contrast(105%);
+  display: block;
 }
 
 #navbar ul {
@@ -73,6 +74,7 @@
   gap: 12px;
   margin: 0;
   list-style: none;
+  padding: 0;
 }
 
 #home-main form {
