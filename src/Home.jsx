@@ -7,7 +7,7 @@ import darkModeIcon from './assets/moon-svgrepo-com.svg';
 import Navbar from './Navbar';
 
 function Home() {
-    const [selectedCity, setSelectedCity] = useState('');
+    const [selectedCity, setSelectedCity] = useState('waterloo');
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -41,9 +41,9 @@ function Home() {
     <div id='home-main'>
         <Navbar />
         <div id='dashboard-header'>
-            <label htmlFor="selectCity"><h4>CITY Dashboard</h4></label>
+            <label htmlFor="selectCity"><h4>{selectedCity.charAt(0).toUpperCase() + selectedCity.substring(1)} Dashboard</h4></label>
             <select name="selectCity" id="SelectCity" onChange={handleSelect}>
-                    <option value="waterloo">Waterloo</option>
+                    <option value="waterloo" selected>Waterloo</option>
                     <option value="toronto">Toronto</option>
                     <option value="hamilton">Hamilton</option>
                 </select>
