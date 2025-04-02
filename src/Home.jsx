@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import infoIcon from './assets/info-circle-svgrepo-com.svg';
 import darkModeIcon from './assets/moon-svgrepo-com.svg';
+import Navbar from './Navbar';
 
 function Home() {
     const [selectedCity, setSelectedCity] = useState('');
@@ -38,6 +39,7 @@ function Home() {
 
   return (
     <div id='home-main'>
+        <Navbar />
         <header>
             <Link to='/'><h3>Student Housing Industry Analysis</h3></Link>
             <div id='header-icons'>
