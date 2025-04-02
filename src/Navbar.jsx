@@ -9,8 +9,8 @@ function Navbar() {
     <nav id='navbar'>
       <Link to='/'><h3>Student Housing Industry Analysis</h3></Link>
       <ul id='header-icons'>
-        <li><img className='header-icon' src={darkModeIcon} alt="Switch modes" /></li>
-        <li><img className='header-icon' src={infoIcon} alt="About" /></li>
+        <li><img className='header-icon' src={darkModeIcon} alt="Switch modes" /><h5>Dark</h5></li>
+        <li><img className='header-icon' src={infoIcon} alt="About" /><h5>About</h5></li>
       </ul>
     </nav>
   )

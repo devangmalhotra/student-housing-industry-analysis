@@ -40,13 +40,6 @@ function Home() {
   return (
     <div id='home-main'>
         <Navbar />
-        <header>
-            <Link to='/'><h3>Student Housing Industry Analysis</h3></Link>
-            <div id='header-icons'>
-                <img className='header-icon' src={darkModeIcon} alt="Switch modes" />
-                <img className='header-icon' src={infoIcon} alt="About" />
-            </div>
-        </header>
     </div>
 /*     <div id='home-main'>
         <div id='home-content'>
