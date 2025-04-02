@@ -48,7 +48,7 @@
   color: #888;
 }
 
-#home-main header, #navbar {
+#navbar {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.4px);
@@ -58,22 +58,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
-#navbar ul {
-  list-style: none;
-}
-
-#home-main .header-icon {
+#navbar .header-icon {
   width: 25px;
   height: auto;
   filter: invert(96%) sepia(0%) saturate(14%) hue-rotate(272deg) brightness(104%) contrast(105%);
 }
 
-#home-main #header-icons {
+#navbar ul {
   display: flex;
   flex-direction: row;
   gap: 12px;
+  margin: 0;
+  list-style: none;
 }
 
 #home-main form {
