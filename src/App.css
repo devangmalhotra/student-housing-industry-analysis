@@ -1,5 +1,5 @@
 #root {
-  --background: #002547;
+  --background: #001930;
   --text-color: #F0F0F0;
   --teal: #004D61;
   --raspberry: #822659;
@@ -144,6 +144,16 @@ h5 {
   border: 1px solid rgba(255, 255, 255, 0.27);
   width: 300px;
   height: 175px;
+}
+
+#home-main header {
+  background-color: red;
+  padding: 20px;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 470px) {

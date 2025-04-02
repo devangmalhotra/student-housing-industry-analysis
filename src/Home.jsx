@@ -40,6 +40,9 @@ function Home() {
   return (
     <div id='home-main'>
         <Navbar />
+        <header>
+            <h4>CITY Dashboard</h4>
+        </header>
     </div>
 /*     <div id='home-main'>
         <div id='home-content'>
