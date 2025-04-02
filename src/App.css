@@ -85,6 +85,13 @@
   gap: 5px;
 }
 
+#navbar #hamburger {
+  color: white;
+  font-size: 30px;
+  display: none;
+
+}
+
 h5 {
   margin: 0;
   color: white;
@@ -137,4 +144,41 @@ h5 {
   border: 1px solid rgba(255, 255, 255, 0.27);
   width: 300px;
   height: 175px;
+}
+
+@media screen and (max-width: 470px) {
+  #navbar #hamburger {
+    display: flex;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    align-items: center;
+    left: 0;
+    right: 0;
+    gap: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #navbar li {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    width: 100%;
+    padding: 20px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
 }
