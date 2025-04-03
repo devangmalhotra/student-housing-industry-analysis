@@ -97,11 +97,7 @@ h5 {
 }
 
 #home-main form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+
 }
 
 #home-main label {
@@ -142,12 +138,20 @@ h5 {
   height: 175px;
 }
 
-#home-main #dashboard-header {
+#home-main #dashboard-header form {
   background-color: red;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
+
+#home-main #dashboard-header #select-and-submit-container {
+  display: flex;
+  flex-direction: column;
+}
+
 
 h4 {
   margin: 0;

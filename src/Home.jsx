@@ -41,12 +41,17 @@ function Home() {
     <div id='home-main'>
         <Navbar />
         <div id='dashboard-header'>
-            <label htmlFor="selectCity"><h4>{selectedCity.charAt(0).toUpperCase() + selectedCity.substring(1)} Dashboard</h4></label>
-            <select name="selectCity" id="SelectCity" onChange={handleSelect}>
-                    <option value="waterloo" selected>Waterloo</option>
-                    <option value="toronto">Toronto</option>
-                    <option value="hamilton">Hamilton</option>
-                </select>
+            <form action="" onSubmit={handleSubmit}>
+                <label htmlFor="selectCity"><h4>{selectedCity.charAt(0).toUpperCase() + selectedCity.substring(1)} Dashboard</h4></label>
+                <div id='select-and-submit-container'>
+                    <select name="selectCity" id="SelectCity" onChange={handleSelect}>
+                        <option value="waterloo" selected>Waterloo</option>
+                        <option value="toronto">Toronto</option>
+                        <option value="hamilton">Hamilton</option>
+                    </select>
+                    <button id='submit-button' type='submit'>Refresh</button>
+                </div>
+            </form>
         </div>
     </div>
 /*     <div id='home-main'>
