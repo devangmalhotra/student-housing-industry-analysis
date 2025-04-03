@@ -139,7 +139,7 @@ h5 {
 }
 
 #home-main #dashboard-header form {
-  background-color: red;
+  background-color: var(--background);
   padding: 20px;
   display: flex;
   justify-content: space-between;
