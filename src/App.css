@@ -150,6 +150,7 @@ h5 {
 #home-main #dashboard-header #select-and-submit-container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 
