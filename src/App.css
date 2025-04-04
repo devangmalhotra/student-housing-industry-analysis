@@ -96,10 +96,6 @@ h5 {
   padding: 0;
 }
 
-#home-main form {
-
-}
-
 #home-main label {
   font-weight: 500;
   font-size: larger;
@@ -175,10 +171,6 @@ h4 {
     left: 0;
     right: 0;
     gap: 0;
-  }
-
-  #navbar {
-    
   }
 
   #navbar li {
