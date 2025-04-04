@@ -155,6 +155,36 @@ h4 {
   padding: 0;
 }
 
+#home-main #home-main-content {
+  padding: 20px;
+  background-color: maroon;
+}
+
+#home-main .stat-container {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 225px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-main .stat-container h4 {
+  color: white;
+}
+
+#home-main .stat-container p {
+  color: white;
+  margin: 0;
+  font-weight: 300;
+}
+
+#home-main #home-main-content {
+  display: grid;
+}
+
 @media screen and (max-width: 470px) {
   #navbar #hamburger {
     display: flex;

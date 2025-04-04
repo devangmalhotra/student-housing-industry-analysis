@@ -54,8 +54,21 @@ function Home() {
             </form>
         </div>
         <section id='home-main-content'>
-            <div className='stat' id='avg-rent-stat-container'>
-                
+            <div className='stat-container'>
+                <h4>$-----</h4>
+                <p>-----</p>
+            </div>
+            <div className='stat-container'>
+                <h4>$-----</h4>
+                <p>-----</p>
+            </div>
+            <div className='stat-container'>
+                <h4>$-----</h4>
+                <p>-----</p>
+            </div>
+            <div className='stat-container'>
+                <h4>$-----</h4>
+                <p>-----</p>
             </div>
         </section>
     </div>
