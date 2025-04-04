@@ -53,6 +53,11 @@ function Home() {
                 </div>
             </form>
         </div>
+        <section id='home-main-content'>
+            <div className='stat' id='avg-rent-stat-container'>
+                
+            </div>
+        </section>
     </div>
 /*     <div id='home-main'>
         <div id='home-content'>
