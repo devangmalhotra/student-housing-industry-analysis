@@ -55,11 +55,12 @@ button {
   font-size: 12px;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--text-color);
+  background-color: white;
   cursor: pointer;
   transition: 0.25s;
-  color: var(--background);
+  color: #64ffce;
   outline: none;
+  width: 100px;
 }
 button:hover {
   border-color: #646cff;
