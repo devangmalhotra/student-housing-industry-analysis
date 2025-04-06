@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import infoIcon from './assets/info-circle-svgrepo-com.svg';
 import darkModeIcon from './assets/moon-svgrepo-com.svg';
 import Navbar from './Navbar';
+import { IoMdRefresh } from "react-icons/io";
 
 function Home() {
     const [selectedCity, setSelectedCity] = useState('waterloo');
@@ -49,7 +50,7 @@ function Home() {
                         <option value="toronto">Toronto</option>
                         <option value="hamilton">Hamilton</option>
                     </select>
-                    <button id='submit-button' type='submit'>Refresh</button>
+                    <button id='submit-button' type='submit'>Refresh <IoMdRefresh size={10}/></button>
                 </div>
             </form>
         </div>
