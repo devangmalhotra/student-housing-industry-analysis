@@ -56,20 +56,20 @@ function Home() {
         </div>
         <section id='home-main-content'>
             <div className='stat-container'>
-                <h4>$-----</h4>
-                <p>-----</p>
+                <h4>-----</h4>
+                <p>Total listings</p>
             </div>
             <div className='stat-container'>
                 <h4>$-----</h4>
-                <p>-----</p>
+                <p>Average rent</p>
             </div>
             <div className='stat-container'>
                 <h4>$-----</h4>
-                <p>-----</p>
+                <p>Most expensive listing</p>
             </div>
             <div className='stat-container'>
                 <h4>$-----</h4>
-                <p>-----</p>
+                <p>Cheapest listing</p>
             </div>
         </section>
     </div>
