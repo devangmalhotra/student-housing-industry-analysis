@@ -1,33 +1,15 @@
 import React from 'react'
 import Navbar from './Components/Navbar';
 import DashboardHeader from './Components/DashboardHeader';
+import MainContent from './Components/MainContent';
 
 function Home() {
-    
-
-
   return (
     <div id='home-main'>
         <Navbar />
         <DashboardHeader />
-        <section id='home-main-content'>
-            <div className='stat-container'>
-                <h4>-----</h4>
-                <p>Total listings</p>
-            </div>
-            <div className='stat-container'>
-                <h4>$-----</h4>
-                <p>Average rent</p>
-            </div>
-            <div className='stat-container'>
-                <h4>$-----</h4>
-                <p>Most expensive listing</p>
-            </div>
-            <div className='stat-container'>
-                <h4>$-----</h4>
-                <p>Cheapest listing</p>
-            </div>
-        </section>
+        <MainContent />
+        
     </div>
 /*     <div id='home-main'>
         <div id='home-content'>
