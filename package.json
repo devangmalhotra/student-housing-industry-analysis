@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "chart.js": "^4.4.8",
     "express": "^4.21.2",
     "prop-types": "^15.8.1",
     "puppeteer": "^24.4.0",
