@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import infoIcon from './assets/info-circle-svgrepo-com.svg';
-import darkModeIcon from './assets/moon-svgrepo-com.svg';
-import { NavLink } from 'react-router-dom';
+import infoIcon from '../assets/info-circle-svgrepo-com.svg';
+import darkModeIcon from '../assets/moon-svgrepo-com.svg';
 import { FiMenu } from "react-icons/fi";
 import { useState } from 'react';
 

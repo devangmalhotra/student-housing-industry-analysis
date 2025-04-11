@@ -1,10 +1,6 @@
 import React from 'react'
-import Scrape from './Scrape'
 import { useState } from 'react'
-import { Link } from 'react-router-dom';
-import infoIcon from './assets/info-circle-svgrepo-com.svg';
-import darkModeIcon from './assets/moon-svgrepo-com.svg';
-import Navbar from './Navbar';
+import Navbar from './Components/Navbar';
 import { IoMdRefresh } from "react-icons/io";
 
 function Home() {
