@@ -1,9 +1,34 @@
-import React from 'react'
-import PropTypes from 'prop-type'
+import React from 'react';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 function LineGraph(props) {
+
+  
+  
   return (
-    <div>LineGraph</div>
+    <div>LineGraph
+       <Line  />
+    </div>
+   
   )
 }
 
