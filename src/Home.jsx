@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Components/Navbar';
 import DashboardHeader from './Components/DashboardHeader';
 import MainContent from './Components/MainContent';
+import LineGraph from './Components/LineGraph';
 
 function Home() {
   return (
@@ -9,7 +10,6 @@ function Home() {
         <Navbar />
         <DashboardHeader />
         <MainContent />
-        
     </div>
   )
 }
