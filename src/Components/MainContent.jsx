@@ -9,7 +9,7 @@ function MainContent() {
         <StatBox statName='Average rent'/>
         <StatBox statName='Most expensive listing'/>
         <StatBox statName='Cheapest listing'/>
-        <LineGraph />
+        <LineGraph /> 
     </section>
   )
 }
