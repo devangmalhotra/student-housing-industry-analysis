@@ -21,6 +21,8 @@ import {
     Legend,
  )
 
+ ChartJS.defaults.color = '#FFF'
+
 function LineGraph(props) {
   const lineChartData = {
     labels: [
@@ -35,6 +37,7 @@ function LineGraph(props) {
             label: 'Steps', 
             data: [3000, 5000, 4500, 5000, 5000], 
             borderColor: 'rgb(5, 192, 192)', 
+            backgroundColor: '#fff'
         }
     ]
   }; 
@@ -47,7 +50,7 @@ function LineGraph(props) {
       },
       title: {
         display: true,
-        text: 'Chart.js Line Chart',
+        text: 'Prices by City',
       },
     },
   };
