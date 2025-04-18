@@ -11,7 +11,20 @@ import {
   Legend,
  } from 'chart.js';
 
+ ChartJS.register(
+    CategoryScale, 
+    LinearScale, 
+    PointElement, 
+    LineElement,
+    Title, 
+    Tooltip, 
+    Legend,
+ )
+
 function LineGraph(props) {
+  const options = {};
+  const data = {};
+
   const lineChartData = {
     labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], 
     datasets: {
@@ -22,7 +35,7 @@ function LineGraph(props) {
   };
 
   return (
-    <div>LineGraph</div>
+    <Line options={options} data={data}/>
    
   )
 }
