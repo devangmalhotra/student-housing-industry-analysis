@@ -23,8 +23,8 @@ import {
 
  ChartJS.defaults.color = '#FFF'
 
-function LineGraph(props) {
-  const lineChartData = {
+function BarGraph(props) {
+  const barChartData = {
     labels: [
         "Monday", 
         "Tuesday", 
@@ -56,11 +56,11 @@ function LineGraph(props) {
   };
 
   return (
-    <Bar data={lineChartData} options={options} />
+    <Bar data={barChartData} options={options} />
    
   )
 }
 
-LineGraph.propTypes = {}
+BarGraph.propTypes = {}
 
-export default LineGraph
+export default BarGraph

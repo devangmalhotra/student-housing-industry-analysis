@@ -1,6 +1,6 @@
 import React from 'react'
 import StatBox from './StatBox'
-import LineGraph from './LineGraph'
+import BarGraph from './BarGraph'
 
 function MainContent() {
   return (
@@ -9,7 +9,7 @@ function MainContent() {
         <StatBox statName='Average rent'/>
         <StatBox statName='Most expensive listing'/>
         <StatBox statName='Cheapest listing'/>
-        <LineGraph /> 
+        <BarGraph /> 
     </section>
   )
 }
