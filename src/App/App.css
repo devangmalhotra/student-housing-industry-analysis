@@ -158,7 +158,7 @@ h4 {
 
 #home-main #home-main-content {
   padding: 20px;
-  background-color: maroon;
+  background-color: var(--background);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
