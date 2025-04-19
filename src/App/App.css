@@ -178,6 +178,11 @@ h4 {
   align-items: center;
 }
 
+canvas {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
 #home-main .stat-container h4 {
   color: white;
 }

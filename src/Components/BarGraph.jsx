@@ -22,20 +22,19 @@ import {
  )
 
  ChartJS.defaults.color = '#FFF'
+ 
 
 function BarGraph(props) {
   const barChartData = {
     labels: [
-        "Monday", 
-        "Tuesday", 
-        "Wednesday", 
-        "Thursday", 
-        "Friday",
+        "Waterloo",
+        "Toronto", 
+        "Hamilton"
     ], 
     datasets: [
         {
-            label: 'Steps', 
-            data: [3000, 5000, 4500, 5000, 5000], 
+            label: 'avgPrice', 
+            data: [0, 0, 0], 
             borderColor: 'rgb(5, 192, 192)', 
             backgroundColor: '#fff'
         }
@@ -50,7 +49,7 @@ function BarGraph(props) {
       },
       title: {
         display: true,
-        text: 'Prices by City',
+        text: 'Average Prices by City',
       },
     },
   };
