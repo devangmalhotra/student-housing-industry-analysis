@@ -7,18 +7,11 @@ function DashboardHeader() {
 
     const handleSubmit = e => {
         e.preventDefault();
-        //const scrapeCityData = new Scrape(selectedCity);
-        //scrapeCityData.getCityFunction();
         getInfo();
     }
 
     const handleSelect = e => {
         setSelectedCity(e.target.value);
-    }
-
-    // Tells the server which city to scrape information for
-    async function postInfo() {
-
     }
 
     // Gets the scraped info
