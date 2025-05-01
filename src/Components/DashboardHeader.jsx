@@ -12,7 +12,6 @@ function DashboardHeader() {
 
     const handleSelect = e => {
         setSelectedCity(e.target.value);
-        localStorage.setItem('selected-city', selectedCity);
     }
 
     // Gets the scraped info

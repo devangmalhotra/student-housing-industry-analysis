@@ -5,14 +5,12 @@ import { useState } from 'react';
 import DashboardHeader from './DashboardHeader';
 
 function MainContent() {
-  const [selectedCity, setSelectedCity] = useState(localStorage.getItem('selected-city'));
-
   return (
     <section id='home-main-content'>
-        <StatBox city={selectedCity} statName='Total listings'/>
-        <StatBox city={selectedCity} statName='Average rent'/>
-        <StatBox city={selectedCity} statName='Most expensive listing'/>
-        <StatBox city={selectedCity} statName='Cheapest listing'/>
+        <StatBox statName='Total listings'/>
+        <StatBox statName='Average rent'/>
+        <StatBox statName='Most expensive listing'/>
+        <StatBox statName='Cheapest listing'/>
         <BarGraph /> 
     </section>
   )
