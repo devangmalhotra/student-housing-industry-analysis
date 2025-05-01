@@ -8,6 +8,8 @@ function DashboardHeader(props) {
     const [data, setData] = useState({
         'totalListings': 0, 
         'averageRent': 0,
+        'mostExpensiveRent': 0, 
+        'cheapestRent': 0, 
     });
 
     const handleSubmit = e => {
@@ -46,7 +48,7 @@ function DashboardHeader(props) {
                 </div>
             </form>
         </div>
-        <MainContent city={selectedCity} totalListings={data.totalListings}/>
+        <MainContent city={selectedCity} totalListings={data.totalListings} averageRent={data.averageRent} mostExpensiveRent={data.mostExpensiveRent} cheapestRent={data.cheapestRent}/>
     </div>
     
   )
