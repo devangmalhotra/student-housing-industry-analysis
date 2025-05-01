@@ -14,14 +14,18 @@ function DashboardHeader(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        getInfo();
-    }
+        updateAndGetInfo();
+    };
 
     const handleSelect = e => {
         setSelectedCity(e.target.value);
+    };
+
+    async function getInfo() {
+        const res = await fetch()
     }
 
-    // Gets the scraped info
+    // Updates and gets the scraped info
     async function updateAndGetInfo() {
         const res = await fetch(`http://localhost:8000/scrape?city=${selectedCity}`, 
             {method: 'GET'}
