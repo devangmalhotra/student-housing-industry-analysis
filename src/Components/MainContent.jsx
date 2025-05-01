@@ -2,6 +2,7 @@ import React from 'react'
 import StatBox from './StatBox'
 import BarGraph from './BarGraph'
 import { useState } from 'react';
+import DashboardHeader from './DashboardHeader';
 
 function MainContent() {
   const [selectedCity, setSelectedCity] = useState(localStorage.getItem('selected-city'));
