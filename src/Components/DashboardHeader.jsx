@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { IoMdRefresh } from "react-icons/io";
 
-function DashboardHeader() {
+function DashboardHeader(props) {
     const [selectedCity, setSelectedCity] = useState('waterloo');
 
     const handleSubmit = e => {

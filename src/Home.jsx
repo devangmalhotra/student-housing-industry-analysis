@@ -31,7 +31,7 @@ function Home() {
   return (
     <div id='home-main'>
         <Navbar />
-        <DashboardHeader />
+        <DashboardHeader handleSelect={handleSelect} handleSubmit={handleSubmit}/>
         <MainContent />
     </div>
   )
