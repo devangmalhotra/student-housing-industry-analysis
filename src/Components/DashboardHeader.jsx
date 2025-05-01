@@ -22,8 +22,9 @@ function DashboardHeader(props) {
     };
 
     async function getInfo() {
-        const res = await fetch()
-    }
+        const res = await fetch(`http://localhost:8000/lastupdatedresult?city=${selectedCity}`, 
+            {method: 'GET'})
+    };
 
     // Updates and gets the scraped info
     async function updateAndGetInfo() {
