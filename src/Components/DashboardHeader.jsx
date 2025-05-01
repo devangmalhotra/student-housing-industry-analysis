@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { IoMdRefresh } from "react-icons/io";
 import MainContent from './MainContent';
@@ -19,11 +19,17 @@ function DashboardHeader(props) {
 
     const handleSelect = e => {
         setSelectedCity(e.target.value);
+        getInfo();
     };
 
     async function getInfo() {
         const res = await fetch(`http://localhost:8000/lastupdatedresult?city=${selectedCity}`, 
             {method: 'GET'})
+
+        console.log(res);
+        const resJson = await res.json();
+        setData(resJson);
+        console.log(resJson);
     };
 
     // Updates and gets the scraped info
@@ -37,6 +43,13 @@ function DashboardHeader(props) {
         setData(resJson);
         console.log(resJson);
     };
+
+    useEffect(() => {
+        getInfo();
+    }, [])
+
+    //getInfo();
+    
 
   return (
     <div>
