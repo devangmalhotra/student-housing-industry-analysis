@@ -5,6 +5,10 @@ import MainContent from './MainContent';
 
 function DashboardHeader(props) {
     const [selectedCity, setSelectedCity] = useState('waterloo');
+    const [data, setData] = useState({
+        'totalListings': 0, 
+        'averageRent': 0,
+    });
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -22,8 +26,9 @@ function DashboardHeader(props) {
         )
 
         console.log(res);
-        const data = await res.json();
-        console.log(data);
+        const resJson = await res.json();
+        setData(resJson);
+        console.log(resJson);
     };
 
   return (
@@ -41,7 +46,7 @@ function DashboardHeader(props) {
                 </div>
             </form>
         </div>
-        <MainContent city={selectedCity}/>
+        <MainContent city={selectedCity} totalListings={data.totalListings}/>
     </div>
     
   )

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 function StatBox(props) {
   return (
     <div className='stat-container'>
-        <h4>{props.city}</h4>
+        <h4>{props.val}</h4>
         <p>{props.statName}</p>
     </div>
   )
