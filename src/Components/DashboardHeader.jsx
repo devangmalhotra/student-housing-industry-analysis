@@ -19,7 +19,6 @@ function DashboardHeader(props) {
 
     const handleSelect = e => {
         setSelectedCity(e.target.value);
-        getInfo();
     };
 
     async function getInfo() {
@@ -29,7 +28,7 @@ function DashboardHeader(props) {
         console.log(res);
         const resJson = await res.json();
         setData(resJson);
-        console.log(resJson);
+        eval(`console.log(resJson.${selectedCity}Payload)`);
     };
 
     // Updates and gets the scraped info
@@ -41,12 +40,12 @@ function DashboardHeader(props) {
         console.log(res);
         const resJson = await res.json();
         setData(resJson);
-        console.log(resJson);
+        eval(`console.log(resJson.${selectedCity}Payload)`);
     };
 
     useEffect(() => {
         getInfo();
-    }, [])
+    }, []); 
     
 
   return (
