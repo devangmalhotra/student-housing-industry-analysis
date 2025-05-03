@@ -19,6 +19,7 @@ function DashboardHeader(props) {
 
     const handleSelect = e => {
         setSelectedCity(e.target.value);
+        getInfo();
     };
 
     async function getInfo() {
@@ -27,7 +28,7 @@ function DashboardHeader(props) {
 
         console.log(res);
         const resJson = await res.json();
-        setData(resJson);
+        eval(`setData(resJson.${selectedCity}Payload)`);
         eval(`console.log(resJson.${selectedCity}Payload)`);
     };
 
@@ -39,7 +40,7 @@ function DashboardHeader(props) {
 
         console.log(res);
         const resJson = await res.json();
-        setData(resJson);
+        eval(`setData(resJson.${selectedCity}Payload)`);
         eval(`console.log(resJson.${selectedCity}Payload)`);
     };
 
