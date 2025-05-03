@@ -17,11 +17,17 @@ function DashboardHeader(props) {
         updateAndGetInfo();
     };
 
-    const handleSelect = e => {
+    /*const handleSelect = e => {
         setSelectedCity(e.target.value);
         console.log(selectedCity);
         getInfo();
-    };
+    };*/
+
+    async function handleSelect(e) {
+        await setSelectedCity(e.target.value);
+        console.log(selectedCity);
+        await getInfo();
+    }
 
     async function getInfo() {
         const res = await fetch(`http://localhost:8000/lastupdatedresult?city=${selectedCity}`, 
