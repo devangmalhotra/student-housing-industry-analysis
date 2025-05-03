@@ -47,8 +47,6 @@ function DashboardHeader(props) {
     useEffect(() => {
         getInfo();
     }, [])
-
-    //getInfo();
     
 
   return (
