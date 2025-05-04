@@ -42,8 +42,9 @@ function DashboardHeader(props) {
 
         console.log(res);
         const resJson = await res.json();
-        eval(`setData(resJson.${selectedCity}Payload)`);
-        eval(`console.log(resJson.${selectedCity}Payload)`);
+        console.log(resJson);
+        //eval(`setData(resJson.${selectedCity}Payload)`);
+        //eval(`console.log(resJson.${selectedCity}Payload)`);
     };
 
     useEffect(() => {
