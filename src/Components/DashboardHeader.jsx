@@ -22,11 +22,9 @@ function DashboardHeader(props) {
         const res = await fetch(`http://localhost:8000/lastupdatedresult?city=${selectedCity}`, 
             {method: 'GET'})
 
-        console.log(res);
         const resJson = await res.json();
-        eval(`setData(resJson.${selectedCity}Payload)`);
-        eval(`console.log(resJson.${selectedCity}Payload)`);
-        return eval(`resJson.${selectedCity}Payload`);
+        setData(resJson);
+        console.log(data);
     };
 
     // Updates and gets the scraped info
@@ -34,14 +32,9 @@ function DashboardHeader(props) {
         const res = await fetch(`http://localhost:8000/scrape?city=${selectedCity}`, 
             {method: 'GET'}
         )
-
-        //console.log(res);
         const resJson = await res.json();
-        //console.log(resJson);
         setData(resJson);
         console.log(data);
-        //eval(`setData(resJson.${selectedCity}Payload)`);
-        //eval(`console.log(resJson.${selectedCity}Payload)`);
     };
 
     useEffect(() => {
