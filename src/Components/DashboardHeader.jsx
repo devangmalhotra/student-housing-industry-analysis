@@ -5,12 +5,7 @@ import MainContent from './MainContent';
 
 function DashboardHeader(props) {
     const [selectedCity, setSelectedCity] = useState('waterloo');
-    const [data, setData] = useState({
-        'totalListings': 0, 
-        'averageRent': 0,
-        'mostExpensiveRent': 0, 
-        'cheapestRent': 0, 
-    });
+    const [data, setData] = useState({});
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -40,9 +35,11 @@ function DashboardHeader(props) {
             {method: 'GET'}
         )
 
-        console.log(res);
+        //console.log(res);
         const resJson = await res.json();
-        console.log(resJson);
+        //console.log(resJson);
+        setData(resJson);
+        console.log(data);
         //eval(`setData(resJson.${selectedCity}Payload)`);
         //eval(`console.log(resJson.${selectedCity}Payload)`);
     };
@@ -67,7 +64,7 @@ function DashboardHeader(props) {
                 </div>
             </form>
         </div>
-        <MainContent city={selectedCity} totalListings={data.totalListings} averageRent={data.averageRent} mostExpensiveRent={data.mostExpensiveRent} cheapestRent={data.cheapestRent}/>
+        <MainContent city={selectedCity} totalListings={data.totallistings} averageRent={data.averagerent} mostExpensiveRent={data.mostexpensiverent} cheapestRent={data.cheapestrent}/>
     </div>
     
   )
