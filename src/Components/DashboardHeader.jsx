@@ -15,7 +15,6 @@ function DashboardHeader(props) {
     const handleSelect = e => {
         setSelectedCity(e.target.value);
         console.log(selectedCity);
-        getInfo();
     };
 
     async function getInfo() {
