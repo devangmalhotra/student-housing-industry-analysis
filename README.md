@@ -1,12 +1,13 @@
-# React + Vite
+# Student Housing Industry Analysis
+This is a full-stack application I created that displays a few statistics about the student housing industry in Waterloo, Toronto, and Hamilton. By clicking the `refresh` button, new data will be scraped from websites like Kijiji and Places4Students.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Backend
+The backend portion of this project was created using Express.js, Puppeteer, and MySQL while being hosted on Render. 
 
-Currently, two official plugins are available:
+## Frontend
+The frontend portion of this project was created using React.js and was hosted on Netlify.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+    <img src='https://github.com/user-attachments/assets/a3a684a4-7c4b-4b08-bc43-4e34335ec470' alt="drawing" width="1000"/>
+</p>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
