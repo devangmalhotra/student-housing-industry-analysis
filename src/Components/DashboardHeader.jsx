@@ -5,7 +5,8 @@ import MainContent from './MainContent';
 
 function DashboardHeader(props) {
     const [selectedCity, setSelectedCity] = useState('waterloo');
-    const [data, setData] = useState({});
+    const [statData, setStatData] = useState({});
+    const [chartData, setChartData] = useState([]);
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -22,8 +23,10 @@ function DashboardHeader(props) {
             {method: 'GET'})
 
         const resJson = await res.json();
-        setData(resJson[0]);
-        console.log(data);
+        setStatData(resJson[0][0]);
+        setChartData(resJson[1]);
+        console.log(statData);
+        console.log(chartData);
     };
 
     // Updates and gets the scraped info
@@ -32,12 +35,12 @@ function DashboardHeader(props) {
             {method: 'GET'}
         )
         const resJson = await res.json();
-        setData(resJson);
-        console.log(data);
+        setStatData(resJson[0][0]);
+        console.log(statData);
     };
 
     useEffect(() => {
-        setData(getInfo())
+        setStatData(getInfo())
     }, [selectedCity]); 
     
 
@@ -56,7 +59,7 @@ function DashboardHeader(props) {
                 </div>
             </form>
         </div>
-        <MainContent city={selectedCity} totalListings={data.totallistings} averageRent={data.averagerent} mostExpensiveRent={data.mostexpensiverent} cheapestRent={data.cheapestrent}/>
+        <MainContent city={selectedCity} totalListings={statData.totallistings} averageRent={statData.averagerent} mostExpensiveRent={statData.mostexpensiverent} cheapestRent={statData.cheapestrent} chartData={chartData}/>
     </div>
     
   )
