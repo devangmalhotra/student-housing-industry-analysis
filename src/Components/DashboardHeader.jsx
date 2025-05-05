@@ -36,7 +36,9 @@ function DashboardHeader(props) {
         )
         const resJson = await res.json();
         setStatData(resJson[0][0]);
+        setChartData(resJson[1]);
         console.log(statData);
+        console.log(chartData);
     };
 
     useEffect(() => {
