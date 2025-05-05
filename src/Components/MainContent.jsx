@@ -11,7 +11,7 @@ function MainContent(props) {
         <StatBox statName='Average rent' city={props.city} val={`$${props.averageRent}`}/>
         <StatBox statName='Most expensive listing' city={props.city} val={`$${props.mostExpensiveRent}`}/>
         <StatBox statName='Cheapest listing' city={props.city} data={props.data} val={`$${props.cheapestRent}`}/>
-        <BarGraph /> 
+        <BarGraph data={props.chartData}/> 
     </section>
   )
 }

@@ -25,16 +25,17 @@ import {
  
 
 function BarGraph(props) {
+  const chartLabels = props.data.map(i => i.city);
+  const chartData = props.data.map(i => i.averagerent);
+  console.log(chartLabels);
+  console.log(chartData);
+
   const barChartData = {
-    labels: [
-        "Waterloo",
-        "Toronto", 
-        "Hamilton"
-    ], 
+    labels: chartLabels, 
     datasets: [
         {
             label: 'avgPrice', 
-            data: [0, 0, 0], 
+            data: chartData, 
             borderColor: 'rgb(5, 192, 192)', 
             backgroundColor: '#fff'
         }
