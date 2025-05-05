@@ -19,7 +19,7 @@ function Home() {
 
   // Gets the scraped info
   async function getInfo() {
-      const res = await fetch(`http://localhost:8000/scrape?city=${selectedCity}`, 
+      const res = await fetch(`https://student-housing-industry-analysis-backend.onrender.com/scrape?city=${selectedCity}`, 
           {method: 'GET'}
       )
 
