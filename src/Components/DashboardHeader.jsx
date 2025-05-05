@@ -19,7 +19,7 @@ function DashboardHeader(props) {
     };
 
     async function getInfo() {
-        const res = await fetch(`http://localhost:8000/lastupdatedresult?city=${selectedCity}`, 
+        const res = await fetch(`https://student-housing-industry-analysis-backend.onrender.com/lastupdatedresult?city=${selectedCity}`, 
             {method: 'GET'})
 
         const resJson = await res.json();
@@ -31,7 +31,7 @@ function DashboardHeader(props) {
 
     // Updates and gets the scraped info
     async function updateAndGetInfo() {
-        const res = await fetch(`http://localhost:8000/scrape?city=${selectedCity}`, 
+        const res = await fetch(`https://student-housing-industry-analysis-backend.onrender.com/scrape?city=${selectedCity}`, 
             {method: 'GET'}
         )
         const resJson = await res.json();
