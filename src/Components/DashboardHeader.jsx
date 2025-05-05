@@ -22,7 +22,7 @@ function DashboardHeader(props) {
             {method: 'GET'})
 
         const resJson = await res.json();
-        setData(resJson);
+        setData(resJson[0]);
         console.log(data);
     };
 
